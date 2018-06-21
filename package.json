@@ -1,0 +1,19 @@
+{
+  "name": "soonoo.me",
+  "version": "1.0.0",
+  "description": "personal blog - http://soonoo.me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soonoo/soonoo.me.git"
+  },
+  "author": "Soonoo Hong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soonoo/soonoo.me/issues"
+  },
+  "homepage": "https://github.com/soonoo/soonoo.me#readme"
+}
