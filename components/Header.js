@@ -1,13 +1,17 @@
 import React from 'react';
 import items from '../constants/navigationItems';
-import { Link } from 'react-router-dom';
+import HeaderItem from './HeaderItem';
 
 const Header = () => (
-	<header>
-		<div className='navigation-row'>
-			{items.map((item, index) => <Link key={index} to={item.link}>{item.title}</Link>)}				
-		</div>
-	</header>
+  <header>
+    <div className='navigation-row'>
+      {items.map((item, index) => (
+        <HeaderItem key={index.toString()} to={item.link}>
+          {item.title}
+        </HeaderItem>
+      ))}
+    </div>
+  </header>
 );
 
 export default Header;
