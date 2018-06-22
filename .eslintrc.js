@@ -10,7 +10,7 @@ module.exports = {
 			"jsx": true,
 		},
 	},
-	"plugins": ["react"],
+	"plugins": ["react", "jest"],
 	// 0: "off", 1: "warn", 2: "error"
 	"rules": {
 		"object-curly-spacing": ["error", "always"],
@@ -20,5 +20,6 @@ module.exports = {
 	},
 	"env": {
 		"browser": true,
+    "jest/globals": true,
 	}
 };
