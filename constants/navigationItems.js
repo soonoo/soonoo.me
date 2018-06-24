@@ -1,11 +1,11 @@
-const navigationItems = [
-  {
-    title: 'about',
-    link: '/about',
-  },
+const items = [
   {
     title: 'blah blah',
     link: '/blah',
+  },
+  {
+    title: 'about',
+    link: '/about',
   },
   {
     title: 'projects',
@@ -13,5 +13,5 @@ const navigationItems = [
   },
 ];
 
-export default navigationItems;
+export default items;
 
