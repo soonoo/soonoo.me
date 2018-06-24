@@ -1,12 +1,15 @@
 import React from 'react';
-import items from '../constants/navigationItems';
 import HeaderItem from './HeaderItem';
+import items from '../constants/navigationItems';
+import Logo from './Logo';
+import '../static/stylesheets/header.scss';
 
 const Header = () => (
   <header>
+    <Logo />
     <div className='navigation-row'>
       {items.map((item, index) => (
-        <HeaderItem key={index.toString()} to={item.link}>
+        <HeaderItem to={item.link} key={index.toString()}>
           {item.title}
         </HeaderItem>
       ))}

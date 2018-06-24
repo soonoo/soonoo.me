@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const HeaderItem = ({ to, children }) => (
-  <Link to={to}>
+  <NavLink to={to}>
     {children}
-  </Link>
+  </NavLink>
 );
 
 HeaderItem.propTypes = {
