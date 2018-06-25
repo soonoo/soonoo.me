@@ -1,27 +1,44 @@
 header {
+  width: 100%;
+  height: 400px;
+  background: url('../images/debian-infinite.png');
+  background-size: cover;
+  background-position: 50% 50%;
   display: flex;
-}
-a {
-  text-decoration: none;
-  font-size: 23px;
-  color: black;
-  outline: 0;
-
-  &.active {
-    border-bottom: 4px solid black;
-  }
+  align-items: end;
 }
 
 .navigation-row {
   display: flex;
+
   a {
+    text-decoration: none;
+    font-size: 19px;
+    color: #999;
+    outline: 0;
+    border-bottom: 4px solid transparent; 
     padding: 10px;
+    margin: 0 10px;
+    transition: border 0.3s;
+
+    &.active {
+      border-bottom-color: white;
+      color: white;
+    }
+
+    &:hover {
+      color: white;
+    }
   }
 }
 
 .logo {
-  display: inline-block;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  margin: 0 82px 0 20px;
+
   img {
-    transform: scale(0.3);
+    height: 25px;
   }
 }
