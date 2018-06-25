@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const HeaderItem = ({ to, children }) => (
-  <NavLink to={to}>
+  <NavLink exact to={to}>
     {children}
   </NavLink>
 );
